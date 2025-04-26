@@ -14,12 +14,12 @@
     "assignedBy": "epac/bd715eb8-36d2-4d33-8db0-505e04c0e4aa/EPAC-PROD",
     "parameterScopes": {}
   },
-  "scope": {
+   "scope": {
     "EPAC-PROD": [
       "/providers/Microsoft.Management/managementGroups/Intermediate-Root"
-    ],
-    "EPAC-DEV": [
-      "/providers/Microsoft.Management/managementGroups/Intermediate-Root-Policy-Dev"
     ]
+    // "EPAC-DEV": [
+    //   "/providers/Microsoft.Management/managementGroups/Intermediate-Root-Policy-Dev"
+    // ]
   }
 }
