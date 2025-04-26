@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/policy-assignment-schema.json",
+  "nodeName": "/root",
+  "definitionEntry": {
+    "policySetId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
+    "displayName": "Microsoft cloud security benchmark"
+  },
+  "assignment": {
+    "name": "ff5644c877b94e999e23dc1a",
+    "displayName": "Microsoft cloud security benchmark",
+    "description": ""
+  },
+  "metadata": {
+    "assignedBy": "epac/bd715eb8-36d2-4d33-8db0-505e04c0e4aa/EPAC-PROD",
+    "parameterScopes": {}
+  },
+  "scope": {
+    "EPAC-PROD": [
+      "/providers/Microsoft.Management/managementGroups/Intermediate-Root"
+    ],
+    "EPAC-DEV": [
+      "/providers/Microsoft.Management/managementGroups/Intermediate-Root-Policy-Dev"
+    ]
+  }
+}
