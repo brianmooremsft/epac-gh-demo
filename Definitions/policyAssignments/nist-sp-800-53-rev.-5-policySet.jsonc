@@ -23,6 +23,6 @@
     // ]
   },
   "managedIdentityLocations": {
-    "EPAC-PROD": "westus"
+    "EPAC-PROD": "eastus2"
   }
 }
