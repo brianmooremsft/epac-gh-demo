@@ -1,0 +1,82 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/policy-assignment-schema.json",
+  "nodeName": "/Security/",
+  "definitionEntry": {
+    "policySetName": "Enforce-Guardrails-KeyVault"
+  },
+  "children": [
+    {
+      "nodeName": "EPAC-Dev",
+      "assignment": {
+        "name": "e97a814e856a",
+        "displayName": "Enforce recommended guardrails for Azure Key Vault",
+        "description": "Enforce recommended guardrails for Azure Key Vault."
+      },
+      "enforcementMode": "Default",
+      "parameters": {
+        "effectKvCertLifetime": "Audit",
+        "effectKvFirewallEnabled": "Audit",
+        "effectKvKeysExpire": "Audit",
+        "effectKvKeysLifetime": "Audit",
+        "effectKvPurgeProtection": "Deny",
+        "effectKvSecretsExpire": "Audit",
+        "effectKvSecretsLifetime": "Audit",
+        "effectKvSoftDelete": "Deny",
+        "keysActive": "Disabled",
+        "keysActiveInDays": 90,
+        "keysCurveNames": "Deny",
+        "keysValidityInDays": 90,
+        "keysValidPeriod": "Disabled",
+        "keyVaultArmRbac": "Deny",
+        "keyVaultCertificateNotExpireWithinSpecifiedNumberOfDays": "Deny",
+        "keyVaultCertificateNotExpireWithinSpecifiedNumberOfDaysValue": 90,
+        "keyVaultCertificatesPeriod": "Disabled",
+        "keyVaultCertKeyTypes": "Deny",
+        "keyVaultCertValidPeriod": 12,
+        "keyVaultCheckMinimumRSACertificateSize": "Deny",
+        "keyVaultCheckMinimumRSAKeySize": "Deny",
+        "keyVaultCryptographicType": "Deny",
+        "keyVaultEllipticCurve": "Deny",
+        "keyVaultHmsCurveNames": "Deny",
+        "keyVaultHmsCurveNamesValue": [
+          "P-256",
+          "P-256K",
+          "P-384",
+          "P-521"
+        ],
+        "keyVaultHmsKeysExpiration": "Deny",
+        "keyVaultHmsPurgeProtection": "Deny",
+        "keyVaultHsmMinimumDaysBeforeExpiration": "Deny",
+        "keyVaultHsmMinimumDaysBeforeExpirationValue": 90,
+        "keyVaultIntegratedCa": "Deny",
+        "keyVaultIntegratedCaValue": [
+          "DigiCert",
+          "GlobalSign"
+        ],
+        "keyVaultManagedHsmCheckMinimumRSAKeySize": "Deny",
+        "keyVaultManagedHsmMinimumRSAKeySizeValue": 2048,
+        "keyVaultMinimumRSACertificateSizeValue": 2048,
+        "keyVaultMinimumRSAKeySizeValue": 2048,
+        "keyVaultNonIntegratedCa": "Disabled",
+        "keyVaultNonIntegratedCaValue": "",
+        "keyVaultSecretContentType": "Deny",
+        "maximumCertLifePercentageLife": 80,
+        "minimumCertLifeDaysBeforeExpiry": 90,
+        "minimumKeysLifeDaysBeforeExpiry": 90,
+        "minimumSecretsLifeDaysBeforeExpiry": 90,
+        "secretsActive": "Disabled",
+        "secretsActiveInDays": 90,
+        "secretsValidityInDays": 90,
+        "secretsValidPeriod": "Deny"
+      },
+      "scope": {
+        "EPAC-PROD": [
+          "/providers/Microsoft.Management/managementGroups/Intermediate-Root"
+        ],
+        "EPAC-DEV": [
+          "/providers/Microsoft.Management/managementGroups/Intermediate-Root-Policy-Dev"
+        ]
+      }
+    }
+  ]
+}
