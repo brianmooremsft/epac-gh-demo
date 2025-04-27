@@ -17,9 +17,9 @@
   "scope": {
     "EPAC-PROD": [
       "/providers/Microsoft.Management/managementGroups/LandingZones"
+    ],
+    "EPAC-DEV": [
+      "/providers/Microsoft.Management/managementGroups/LandingZones-Policy-Dev"
     ]
-    // "EPAC-DEV": [
-    //   "/providers/Microsoft.Management/managementGroups/LandingZones-Policy-Dev"
-    // ]
   }
 }

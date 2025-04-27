@@ -17,10 +17,10 @@
   "scope": {
     "EPAC-PROD": [
       "/providers/Microsoft.Management/managementGroups/Intermediate-Root"
+    ],
+    "EPAC-DEV": [
+      "/providers/Microsoft.Management/managementGroups/Intermediate-Root-Policy-Dev"
     ]
-    // "EPAC-DEV": [
-    //   "/providers/Microsoft.Management/managementGroups/Intermediate-Root-Policy-Dev"
-    // ]
   },
   "managedIdentityLocations": {
     "EPAC-PROD": "westus"
