@@ -6,15 +6,16 @@
     "displayName": "Microsoft cloud security benchmark"
   },
   "assignment": {
-    "name": "ff5644c877b94e999e23dc1a",
+    "name": "554e25763bf145c694ffda78",
     "displayName": "Microsoft cloud security benchmark",
     "description": ""
   },
   "metadata": {
-    "assignedBy": "epac/bd715eb8-36d2-4d33-8db0-505e04c0e4aa/EPAC-PROD",
     "parameterScopes": {}
   },
-   "scope": {
+  "overrides": [],
+  "resourceSelectors": [],
+  "scope": {
     "EPAC-PROD": [
       "/providers/Microsoft.Management/managementGroups/Intermediate-Root"
     ],
