@@ -26,7 +26,7 @@
                 "doNotDisableDeprecatedPolicies": false
             },
             "globalNotScopes": [],
-            "managedIdentityLocation": "westus2"
+            "managedIdentityLocation": "eastus2"
         }
     ]
 }
