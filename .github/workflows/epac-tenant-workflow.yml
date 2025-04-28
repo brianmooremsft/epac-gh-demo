@@ -35,7 +35,7 @@ jobs:
     if: needs.plan.outputs.deployPolicyChanges == 'yes' && github.ref == 'refs/heads/main'
     uses: ./.github/workflows/deploy-policy.yml
     with:
-      pacEnvironmentSelector: tenant
+      pacEnvironmentSelector: EPAC-PROD
       planGitHubEnvironment: TENANT-DEPLOY-POLICY
       PAC_INPUT_FOLDER: ./Output
       PAC_DEFINITIONS_FOLDER: ./Definitions
@@ -47,7 +47,7 @@ jobs:
     if: needs.plan.outputs.deployRoleChanges == 'yes' && github.ref == 'refs/heads/main'
     uses: ./.github/workflows/deploy-roles.yml
     with:
-      pacEnvironmentSelector: tenant
+      pacEnvironmentSelector: EPAC-PROD
       planGitHubEnvironment: TENANT-DEPLOY-ROLES
       PAC_INPUT_FOLDER: ./Output
       PAC_DEFINITIONS_FOLDER: ./Definitions
