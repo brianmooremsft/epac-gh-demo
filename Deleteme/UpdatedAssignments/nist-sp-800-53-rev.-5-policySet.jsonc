@@ -11,8 +11,8 @@
     "description": ""
   },
   "metadata": {
-    "assignedBy": "epac/bd715eb8-36d2-4d33-8db0-505e04c0e4aa/EPAC-PROD",
-    "parameterScopes": {}
+    "parameterScopes": {},
+    "assignedBy": "epac/bd715eb8-36d2-4d33-8db0-505e04c0e4aa/EPAC-PROD"
   },
   "scope": {
     "EPAC-PROD": [
@@ -21,8 +21,5 @@
     "EPAC-DEV": [
       "/providers/Microsoft.Management/managementGroups/Intermediate-Root-Policy-Dev"
     ]
-  },
-  "managedIdentityLocations": {
-    "EPAC-PROD": "eastus"
   }
 }
